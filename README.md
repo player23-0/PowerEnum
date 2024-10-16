@@ -19,7 +19,7 @@ Copy file to target machine.
     powershell -ep bypass
     . .\PowerEnum.ps1
     LDAPSearch -LDAPQuery '<Enter LDAP Query>' -ShowAllProperties
-    ```
+```
 
 ## Usage
 Best way to use it (Gives the most output):
