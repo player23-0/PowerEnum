@@ -13,7 +13,13 @@ The `LDAPSearch` PowerShell script allows you to perform LDAP queries against Ac
 - Silent mode to suppress terminal output.
 
 ## Installation
-To use this script, ensure you have PowerShell installed on your system. You can run the script directly in PowerShell or save it as a `.ps1` file.
+Copy file to target machine.
+    ```powershell
+    
+    powershell -ep bypass
+    . .\PowerEnum.ps1
+    LDAPSearch -LDAPQuery '<Enter LDAP Query>' -ShowAllProperties
+    ```
 
 ## Usage
 Best way to use it (Gives the most output):
