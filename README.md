@@ -14,7 +14,7 @@ The `LDAPSearch` PowerShell script allows you to perform LDAP queries against Ac
 
 ## Installation
 Copy file to target machine.
-    ```powershell
+```powershell
     
     powershell -ep bypass
     . .\PowerEnum.ps1
