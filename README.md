@@ -3,7 +3,7 @@ AD enumeration using Powershell and .NET classes
 
 
 ## Overview
-The `LDAPSearch` PowerShell script allows you to perform LDAP queries against Active Directory and retrieve specified attributes of user accounts, computers, and groups. The results can be displayed in the terminal or saved to a text file.
+The `PowerEnum` PowerShell script allows you to perform LDAP queries against Active Directory and retrieve specified attributes of user accounts, computers, and groups. The results can be displayed in the terminal or saved to a text file.
 
 ## Features
 - Perform LDAP queries with customizable filters.
@@ -13,7 +13,7 @@ The `LDAPSearch` PowerShell script allows you to perform LDAP queries against Ac
 - Silent mode to suppress terminal output.
 
 ## Installation
-Copy file to target machine.
+Copy file to Windows machine.
 ```powershell
     
     powershell -ep bypass
