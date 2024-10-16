@@ -1,6 +1,7 @@
 # PowerEnum
 AD enumeration using Powershell and .NET classes
 
+
 ## Overview
 The `LDAPSearch` PowerShell script allows you to perform LDAP queries against Active Directory and retrieve specified attributes of user accounts, computers, and groups. The results can be displayed in the terminal or saved to a text file.
 
@@ -55,6 +56,40 @@ To use this script, ensure you have PowerShell installed on your system. You can
 - `536870912`: Domain
 
 ### Example Usages
+
 1. **Basic Query to Get All Users**:
-   ```powershell
-   LDAPSearch -LDAPQuery '(samAccountType=805306368)'
+    ```powershell
+    LDAPSearch -LDAPQuery '(samAccountType=805306368)'
+    ```
+
+2. **Query to Get Users with Specific Properties**:
+    ```powershell
+    LDAPSearch -LDAPQuery '(samAccountType=805306368)' -PropertiesToLoad 'name', 'lastlogon'
+    ```
+
+3. **Show All Properties for Users**:
+    ```powershell
+    LDAPSearch -LDAPQuery '(samAccountType=805306368)' -ShowAllProperties
+    ```
+
+4. **Run Query Silently (Only to File)**:
+    ```powershell
+    LDAPSearch -LDAPQuery '(samAccountType=805306368)' -Silent
+    ```
+
+5. **Verbose Output**:
+    ```powershell
+    LDAPSearch -LDAPQuery '(samAccountType=805306368)' -Verbose
+    ```
+
+6. **Help Command**:
+    ```powershell
+    LDAPSearch -Help
+    ```
+
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
