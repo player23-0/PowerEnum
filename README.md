@@ -91,8 +91,13 @@ Best way to use it (Gives the most output):
     ```powershell
     LDAPSearch -LDAPQuery '(samAccountType=805306368)' -Verbose
     ```
+    
+6. **Run with Authentication**:
+    ```powershell
+    LDAPSearch -LDAPQuery "(samAccountType=805306368)" -ShowAllProperties -Verbose -Username Thor -Password Password123!
+    ```
 
-6. **Help Command**:
+7. **Help Command**:
     ```powershell
     LDAPSearch -Help
     ```
